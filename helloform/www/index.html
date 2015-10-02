@@ -37,7 +37,7 @@
     //
     function onDeviceReady() {
          alert("hi")
-		 iabRef = window.open('http://apache.org', '_blank', 'location=yes');
+		 iabRef = window.open('http://apache.org', '', 'location=yes');
          iabRef.addEventListener('loadstart', iabLoadStart);
          iabRef.addEventListener('loadstop', iabLoadStop);
          iabRef.removeEventListener('loaderror', iabLoadError);
