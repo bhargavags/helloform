@@ -29,7 +29,12 @@
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>Hello World</title>
     </head>
+	<script>
 	
+	function openDeviceBrowser (externalLinkToOpen){	
+	alert("click");
+	window.open(externalLinkToOpen, '_system', 'location=no');}
+	</script>
     <body>
         <div class="app">
             <h1>PhoneGap</h1>
@@ -39,8 +44,10 @@
 				
 				
             </div>
-	<div height="30px",width="50%"; style="margin-top:30%;">	<a href="#" onclick="window.open('https://staging.revolutioncredit.com/login', '_blank');"><input type="submit"  value="click"></a></div> 
+<!--	<div height="30px",width="50%"; style="margin-top:30%;">	<a href="#" onclick="window.open('https://staging.revolutioncredit.com/login', '_blank');"><input type="submit"  value="click"></a></div> -->
 	
+
+	<a href="http://www.google.de/" onclick="openDeviceBrowser ('http://www.google.de/')">Link</a>
 
 <!--<a href="http://www.google.com/" class="navLink" data-url="http://www.google.com/"><div style="" margin-top:5%;">Go to Google</div></a>-->
         </div>
