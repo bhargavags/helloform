@@ -32,8 +32,10 @@
 	<script>
 	
 	function openDeviceBrowser (externalLinkToOpen){	
-	alert("click");
-	window.open(externalLinkToOpen, '_system', 'location=no');}
+	alert("click:" + externalLinkToOpen) ;
+	window.open(externalLinkToOpen, '_system', 'location=no');
+	alert("after:"+externalLinkToOpen);
+	}
 	</script>
     <body>
         <div class="app">
@@ -47,7 +49,7 @@
 <!--	<div height="30px",width="50%"; style="margin-top:30%;">	<a href="#" onclick="window.open('https://staging.revolutioncredit.com/login', '_blank');"><input type="submit"  value="click"></a></div> -->
 	
 
-	<a href="#" onclick="openDeviceBrowser ('http://www.google.com/')">Link< /a>
+	<a href="http://www.google.com/">Link< /a>
 
 <!--<a href="http://www.google.com/" class="navLink" data-url="http://www.google.com/"><div style="" margin-top:5%;">Go to Google</div></a>-->
         </div>
