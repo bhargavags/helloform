@@ -29,6 +29,14 @@
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>Hello World</title>
     </head>
+	<script>
+	$(".navLink").on('tap', function (e) {
+    //Prevents Default Behavior 
+    e.preventDefault();
+    // Calls Your Function with the URL from the custom data attribute 
+    openUrl($(this).data('url'), '_system');
+});
+	</script>
     <body>
         <div class="app">
             <h1>PhoneGap</h1>
@@ -38,7 +46,10 @@
 				
 				
             </div>
-		<div height="30px",width="50%"; style="margin-top:30%;">	<a href="#" onclick="window.open('https://staging.revolutioncredit.com/login', '_blank');"><input type="submit"  value="click"></a></div>
+	<!--	<div height="30px",width="50%"; style="margin-top:30%;">	<a href="#" onclick="window.open('https://staging.revolutioncredit.com/login', '_blank');"><input type="submit"  value="click"></a></div> -->
+	
+
+<a href="#" class="navLink" data-url="http://www.google.com/">Go to Google</a>
         </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
