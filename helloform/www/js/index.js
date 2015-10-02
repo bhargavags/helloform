@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-var app = {
+/*var app = {
     // Application Constructor
 	
     initialize: function() {
@@ -48,4 +48,7 @@ var app = {
        alert("show");
         console.log('Received Event: ' + id);
     }
-};
+}; */
+
+
+super.loadUrl("www.google.com");
