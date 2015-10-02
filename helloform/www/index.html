@@ -1,29 +1,27 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-  <title>Test application</title>
-</head>
-<body>
-  <a href="#" onclick="openUrl('http://www.google.com/'); return false;">Link test 1</a>
-  <a href="#" onclick="window.open('http://www.google.com/', '_system', 'location=yes'); return false;">Test link 2</a>
+  <head>
+    <title>InAppBrowser.addEventListener Example</title>
 
-  <script src="phonegap.js"></script>
-  <script src="cordova.js"></script>
-  <script src="js/jquery-1.9.1.js"></script>
-  <script type="text/javascript">
-    function openUrl(url) {
-      alert("open url: " + url);
-      window.open(url, '_blank', 'location=yes');
-    }
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8">
 
+    // Wait for device API libraries to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // device APIs are available
+    //
     function onDeviceReady() {
-      alert('device ready!');
+         var ref = window.open('http://google.com', '_blank', 'location=yes');
+         ref.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
+         ref.addEventListener('loadstop', function(event) { alert('stop: ' + event.url); });
+         ref.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
+         ref.addEventListener('exit', function(event) { alert(event.type); });
     }
-    $(function() {
-        document.addEventListener("deviceready", onDeviceReady, true);
-    });
-  </script>
-</body>
+
+    </script>
+  </head>
+  <body>
+  </body>
 </html>
