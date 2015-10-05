@@ -24,6 +24,7 @@
     <preference name="auto-hide-splash-screen" value="true" />
     <preference name="disable-cursor" value="false" />
     <preference name="android-minSdkVersion" value="7" />
+    <preference name="stay-in-webview" value="true" />
     <preference name="android-installLocation" value="auto" />
 	<gap:plugin name="org.apache.cordova.battery-status" version="0.2.11"/>
     <gap:plugin name="org.apache.cordova.camera" version="0.3.2" />
