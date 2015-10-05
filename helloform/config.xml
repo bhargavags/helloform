@@ -59,12 +59,12 @@
     <false/>
   </gap:config-file>
   <preference name="StatusBarOverlaysWebView" value="true" />
-
-  <icon src="icon.png" />
-  <icon src="res/icon/android/36.png"   gap:platform="android"    gap:density="ldpi" />
-  <icon src="res/icon/android/48.png"   gap:platform="android"    gap:density="mdpi" />
-  <icon src="res/icon/android/72.png"   gap:platform="android"    gap:density="hdpi" />
-  <icon src="res/icon/android/96.png"  gap:platform="android"    gap:density="xhdpi" />
+  
+    <icon src="icon.png" />
+  <icon src="www/res/icon/android/36.png"   gap:platform="android"    gap:density="ldpi" />
+  <icon src="www/res/icon/android/48.png"   gap:platform="android"    gap:density="mdpi" />
+  <icon src="www/res/icon/android/72.png"   gap:platform="android"    gap:density="hdpi" />
+  <icon src="www/res/icon/android/96.png"  gap:platform="android"    gap:density="xhdpi" />
     <icon gap:platform="blackberry" src="www/res/icon/blackberry/icon-80.png" />
     <icon gap:platform="blackberry" gap:state="hover" src="www/res/icon/blackberry/icon-80.png" />
     <icon gap:platform="ios" height="57" src="www/res/icon/ios/icon-57.png" width="57" />
