@@ -1,24 +1,5 @@
 ﻿<!DOCTYPE html>
-<!--
-    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
 
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
   <html>
     <head>
         <meta charset="utf-8" />
@@ -29,22 +10,21 @@
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>Hello World</title>
         <script src="http://www.w3schools.com/js"></script>
+
     </head>
-	<script>
-	
-	function openDeviceBrowser (externalLinkToOpen){	
-	alert("click:" + externalLinkToOpen) ;
-	window.open(externalLinkToOpen, '_system', 'location=no');
-	alert("after:"+externalLinkToOpen);
-	}
+  <script>
+
+  /* function openDeviceBrowser(externalLinkToOpen) {
+       alert("click:" + externalLinkToOpen);
+        window.open(externalLinkToOpen, '_system', 'location=no');
+        alert("after:" + externalLinkToOpen);
+    }*/
 
 
-	$("a#thing_to_click").on('click', function () {
-	    window.location = "http://www.google.com/";
-	});
+   
 
 
-	</script>
+  </script>
     <body>
         <div class="app">
             <h1>PhoneGap</h1>
@@ -57,9 +37,8 @@
 	<!-- <a href="https://staging.revolutioncredit.com/demo/mobileIndex.html"  target="_blank">Submit</a>-->
 	<!--<a href="http://www.w3schools.com">Visit W3Schools.com!</a> -->
 
-            <a href="http://www.youtube.com/user/mychannel" class="ui-link" rel="external" target="_blank" title="My YouTube Channel">YouTube Channel</a>
 
-          
+            <input type="button" id="button1" onclick="window.open('http://bit.ly/iphonedevlog','_blank','location=yes','closebuttoncaption=Return');" value="Click Here">
 
 <!--	<a href="#" onclick="openDeviceBrowser ('http://www.google.com/')">Link</a>
 
