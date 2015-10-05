@@ -37,6 +37,13 @@
 	window.open(externalLinkToOpen, '_system', 'location=no');
 	alert("after:"+externalLinkToOpen);
 	}
+
+
+	$("a#thing_to_click").on('click', function () {
+	    window.location = "http://www.google.com/";
+	});
+
+
 	</script>
     <body>
         <div class="app">
@@ -48,7 +55,11 @@
 				
             </div>
 	<!-- <a href="https://staging.revolutioncredit.com/demo/mobileIndex.html"  target="_blank">Submit</a>-->
-	<a href="http://www.w3schools.com">Visit W3Schools.com!</a>
+	<!--<a href="http://www.w3schools.com">Visit W3Schools.com!</a> -->
+
+
+            <input type="button" value="My Button"
+                   onclick=" window.location = 'http://www.w3schools.com'" />
 
 <!--	<a href="#" onclick="openDeviceBrowser ('http://www.google.com/')">Link</a>
 
