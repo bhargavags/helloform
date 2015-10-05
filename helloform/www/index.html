@@ -20,8 +20,17 @@
             ref.addEventListener('loadstop', function (event) { alert('stop: ' + event.url); });
             ref.addEventListener('loaderror', function (event) { alert('error: ' + event.message); });
             ref.addEventListener('exit', function (event) { alert(event.type); });
+       
+
+            document.addEventListener("backbutton", function (e) {
+
+                navigator.app.exitApp();
+
+            }, false);
         }
        
+     
+
     </script>
 </head>
 <body>
