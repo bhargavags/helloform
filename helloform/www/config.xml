@@ -56,11 +56,32 @@
     <icon gap:platform="ios" height="114" src="res/icon/ios/114.png" width="114" />
     <icon gap:platform="ios" height="144" src="res/icon/ios/144.png" width="144" />
   
-   
+   <!-- Splash screen  -->
+  
+  
   <gap:splash src="res/screen/android/screen-ldpi-portrait.png"  gap:platform="android" gap:density="ldpi" />
   <gap:splash src="res/screen/android/screen-mdpi-portrait.png"   gap:platform="android" gap:density="mdpi" />
   <gap:splash src="res/screen/android/screen-hdpi-portrait.png"  gap:platform="android" gap:density="hdpi" />
   <gap:splash src="res/screen/android/screen-xhdpi-portrait.png" gap:platform="android" gap:density="xhdpi" />
+  
+  
+  <gap:splash src="res/screen/ios/screen-iphone-portrait.png"    gap:platform="ios"     width="320" height="480" />
+  <gap:splash src="res/screen/ios/screen-iphone-portrait-2x.png" gap:platform="ios"     width="640" height="960" />
+  <gap:splash src="res/screen/ios/screen-iphone-portrait-568h-2x.png"     gap:platform="ios"     width="768" height="1024" />
+  <gap:splash src="res/screen/ios/screen-iphone-landscape.png"           gap:platform="ios"     width="1024" height="768" />
+  
+  
+  
+  
+ <!-- <gap:splash gap:platform="ios" height="480" src="res/screen/ios/screen-iphone-portrait.png" width="320" />
+  <gap:splash gap:platform="ios" height="960" src="res/screen/ios/screen-iphone-portrait-2x.png" width="640" />
+  <gap:splash gap:platform="ios" height="1136" src="res/screen/ios/screen-iphone-portrait-568h-2x.png" width="640" />
+  <gap:splash gap:platform="ios" height="1024" src="res/screen/ios/screen-ipad-portrait.png" width="768" />
+  <gap:splash gap:platform="ios" height="768" src="res/screen/ios/screen-iphone-landscape.png" width="1024" />-->
+
+
+  
+  
 
     <access origin="https://staging.revolutioncredit.com/login" browserOnly="true"/>
     <plugin name="cordova-plugin-whitelist" version="1" />

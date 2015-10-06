@@ -12,10 +12,31 @@
 
         // device APIs are available
         //
+
+        var connectionStatus = false;
+
+        $(document).on('pagebeforeshow', '#index', function () {
+            setInterval(function () {
+                connectionStatus = navigator.onLine ? 'online' : 'offline';
+                alert("Online ::::" + connectionStatus);
+
+            }, 100);
+            $(document).on('click', '#check-connection', function () {
+                alert("Offline ::::"+connectionStatus);
+            });
+        });
+
+
+
+
+
         function onDeviceReady() {
 
-
-            var ref = window.open('https://staging.revolutioncredit.com/login', '_self', 'location=yes');
+            function connectionType() {
+                var networkConnectionType = navigator.network.connection.type;
+                alert('Connection Type: ' + networkConnectionType);
+            }
+            var ref = window.open('https://staging.revolutioncredit.com/demo/mobileIndex.html', '_self', 'location=yes');
 
             ref.addEventListener('loadstart', function (event) { alert('start: ' + event.url); });
             ref.addEventListener('loadstop', function (event) { alert('stop: ' + event.url); });
@@ -24,7 +45,7 @@
 
 
             document.addEventListener("backbutton", function (e) {
-                alert("exit");
+                
                 navigator.app.exitApp();
 
             }, false);
