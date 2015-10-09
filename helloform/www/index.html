@@ -42,7 +42,7 @@
                 var networkConnectionType = navigator.network.connection.type;
                 alert('Connection Type: ' + networkConnectionType);
             }
-            var ref = window.open('http://staging.revolutioncredit.com/demo/mobileIndex.html', '_self', 'location=yes');
+            var ref = window.open('https://staging.revolutioncredit.com/demo/mobileIndex.html', '_self', 'location=yes');
 
             ref.addEventListener('loadstart', function (event) { alert('start: ' + event.url); });
             ref.addEventListener('loadstop', function (event) { alert('stop: ' + event.url); });
