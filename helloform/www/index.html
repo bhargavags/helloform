@@ -20,6 +20,7 @@
 
         var connectionStatus = false;
 
+		
         $(document).on('pagebeforeshow', '#index', function () {
             setInterval(function () {
                 connectionStatus = navigator.onLine ? 'online' : 'offline';
